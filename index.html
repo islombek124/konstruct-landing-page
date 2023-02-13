@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <title>Konstruct</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundPosition: {
+            "center-top": ['center', 'top'],
+            "center-bottom": ['center', 'bottom']
+          },
+          fontFamily: {
+            "open-sans": ['Open Sans', 'sans-serif'],
+            "bebas-neue": ['Bebas Neue', 'cursive']
+          },
+          colors: {
+            'gray': '#48555B',
+            'blue': '#00A4E5',
+            'darker': '#171819',
+            'dark': '#141A20'
+          }
+        },
+      }
+    }
+  </script>
+</head>
+
+<body class="overflow-x-hidden font-open-sans">
+
+  <!--                -->
+  <!--    Header      -->
+  <!--                -->
+
+  <header style="background-image: url(./images/bg.jpg);" id="home"
+    class="w-full bg-cover h-screen flex flex-col items-center justify-between py-6 bg-center-bottom md:bg-center-top text-center text-white">
+    <a href="#">
+      <img class="h-[23px]" src="images/logo-white.svg" alt="Konstruct" />
+    </a>
+    <div class="h-max">
+      <h1 class="md:text-6xl text-3xl tracking-widest font-bebas-neue">PARTNER WITH KONSTUCT</h1>
+      <p class="mt-3">An award-winning construction management firm</p>
+    </div>
+    <a class="text-white text-base relative bottom-3" href="#main">SCROLL DOWN</a>
+  </header>
+
+  <!--              -->
+  <!--    Main      -->
+  <!--              -->
+
+  <main class="w-full" id="main">
+    <nav class="w-full h-[65px] border-b border-[#E6E6E6]">
+      <div class="menu mx-auto flex items-center max-w-[940px] w-full justify-between h-full px-3">
+        <a href="/">
+          <img src="./images/logo-black.svg" class="h-[18px]" alt="">
+        </a>
+
+        <ul class="hidden md:flex gap-x-7">
+          <li>
+            <a href="#home" class="uppercase text-sm text-gray font-semibold">HOMe</a>
+          </li>
+
+          <li>
+            <a href="#about" class="uppercase text-sm text-gray font-semibold active">ABOUT</a>
+          </li>
+
+          <li>
+            <a href="#services" class="uppercase text-sm text-gray font-semibold">SERVICES</a>
+          </li>
+
+          <li>
+            <a href="#work" class="uppercase text-sm text-gray font-semibold">WORK</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="uppercase text-sm text-gray font-semibold">CONTACT</a>
+          </li>
+        </ul>
+        <button class="md:hidden toggleBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu"
+        class="relative hidden max-w-[940px] w-full flex justify-center border-b after:content-[''] after:absolute after:w-full after:h-full after:bg-white after:z-10 border-[#e6e6e6]">
+        <ul class="flex flex-col items-center gap-y-2 text-center z-50">
+          <li>
+            <a href="#home" class="uppercase text-sm font-bold text-gray border-b border-[#999]">HOME</a>
+          </li>
+
+          <li>
+            <a href="#about" class="uppercase text-sm font-bold text-gray border-b border-[#999] active">ABOUT</a>
+          </li>
+
+          <li>
+            <a href="#services" class="uppercase text-sm font-bold text-gray border-b border-[#999]">SERVICES</a>
+          </li>
+
+          <li>
+            <a href="#work" class="uppercase text-sm font-bold text-gray border-b border-[#999]">WORK</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="uppercase text-sm font-bold text-gray">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--               -->
+    <!--    About      -->
+    <!--               -->
+
+    <section id="about"
+      class="flex flex-col items-center md:grid md:grid-cols-2 md:grid-rows-3 grid-cols-4 max-w-[941px] w-full mx-auto gap-x-6 mt-[57px] px-4">
+      <h3 class="uppercase font-bold tracking-widest text-gray title text-center">OUR STORY</h3>
+      <p class="p1 font-bold text-gray text-2xl">Founded in 2011 by John Mathew Smith, <span
+          class="text-blue">Konstruct</span>
+        has become the
+        number one
+        construction
+        management
+        firm</p>
+      <p class="p2 text-gray text-sm tracking-widest mt-[30px]">Lorem ipsum dolor sit amet, consectetuer adipiscing
+        elit, sed
+        diam
+        nonummy nibh
+        euismod
+        tincidunt ut
+        laoreet
+        dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+      <div class="drafts grid md:grid-cols-3 grid-cols-3 gap-y-7 gap-x-7">
+        <div class="relative">
+          <h4 class="z-10 absolute top-[15px] left-[12px] text-white md:text-2xl text-base font-extrabold">
+            WE<br>
+            PLAN</h4>
+          <img src="images/draft01.png" class="relative" alt="draft01">
+        </div>
+        <div class="relative">
+          <h4 class="z-10 absolute top-[15px] left-[12px] text-white md:text-2xl text-base font-extrabold">
+            WE<br>
+            MANAGE</h4>
+          <img src="images/draft02.png" class="relative" alt="draft02">
+        </div>
+        <div class="relative">
+          <h4 class="z-10 absolute top-[15px] left-[12px] text-white md:text-2xl text-base font-extrabold">
+            WE<br>
+            BUILD</h4>
+          <img src="images/draft03.png" class="relative" alt="draft03">
+        </div>
+      </div>
+    </section>
+
+    <!--                  -->
+    <!--    Services      -->
+    <!--                  -->
+
+    <section id="services" class="max-w-[941px] mt-40 w-full mx-auto md:p-0 p-7">
+      <div class="flex justify-between md:flex-nowrap flex-wrap gap-7 items-start w-full">
+        <h3
+          class="relative text-gray font-bold after:content-[''] after:absolute after:w-[50px] after:h-[2px] after:bg-blue after:-bottom-3 after:left-0">
+          OUR
+          CAPABILITIES</h3>
+        <p class="text-sm text-gray max-w-[405px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh
+          euismod
+          tincidunt ut laoreet
+          dolore magna aliquam erat.</p>
+        <button class="bg-blue text-white h-[40px] px-7">ALL
+          SERVICES</button>
+      </div>
+      <div class="flex md:flex-row flex-col items-center w-full md:justify-between gap-7 mt-20">
+        <div class="service border border-[#E6E6E6] p-4 flex flex-col justify-between h-[330px]">
+          <img src="./images/service01.png" class="h-[75px] w-[65px]" alt="">
+          <h4 class="text-gray font-bold">PROJECT AND CONSTRUCTION MANAGEMENT</h4>
+          <p class="text-gray text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod
+            tincidunt ut
+            laoreet dolore magna aliquam erat.</p>
+        </div>
+        <div class="service border border-[#E6E6E6] p-4 flex flex-col justify-between h-[330px]">
+          <img src="./images/service02.png" class="h-[75px] w-[65px]" alt="">
+          <h4 class="text-gray font-bold">STRUCTURE AUDIT AND MAINTENANCE</h4>
+          <p class="text-gray text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod
+            tincidunt ut
+            laoreet dolore magna aliquam erat.</p>
+        </div>
+        <div class="service border border-[#E6E6E6] p-4 flex flex-col justify-between h-[330px]">
+          <img src="./images/service03.png" class="h-[75px] w-[65px]" alt="">
+          <h4 class="text-gray font-bold">FACTORY CONSTRUCTION AND MODELING</h4>
+          <p class="text-gray text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod
+            tincidunt ut
+            laoreet dolore magna aliquam erat.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--                  -->
+  <!--    Footer        -->
+  <!--                  -->
+
+  <footer class="w-full">
+
+    <!--                       -->
+    <!--    Get in touch       -->
+    <!--                       -->
+
+    <section id="contact"
+      class="w-full text-center flex flex-col items-center justify-center gap-y-7 h-[500px] bg-cover bg-no-repeat">
+      <h2 class="text-gray text-3xl font-bold max-w-[350px]">Want to build something amazing?</h2>
+      <button class="uppercase bg-blue h-[40px] px-7 text-white font-semibold text-base">GET IN TOUCH</button>
+    </section>
+
+    <div class="footer w-full">
+      <section class="w-full bg-darker md:h-[100px] h-max py-10 flex items-center justify-center">
+        <div
+          class="content max-w-[685px] w-full mx-auto flex items-center justify-between md:flex-row flex-col gap-y-7">
+          <h4 class="text-white font-semibold text-2xl tracking-widest">Newsletter Signup</h4>
+          <form action="/signup" method="get" class="grid place-items-center gap-y-3 md:flex md:items-center">
+            <input type="email" name="email" required class="h-[40px] w-[250px] outline-0 px-3 text-sm"
+              placeholder="test@youremail.com">
+            <input type="submit" value="SIGNUP"
+              class="uppercase bg-blue h-[40px] px-7 text-white font-semibold tracking-widest">
+          </form>
+        </div>
+      </section>
+      <div role="main" class="w-full bg-dark h-max">
+        <div
+          class="content flex justify-between flex-wrap justify-center gap-10 max-w-[915px] min-h-[240px] h-max w-full mx-auto py-20 flex-wrap gap-10 px-7">
+          <div
+            class="company flex flex-col justify-between md:items-start mx-auto items-center md:text-left text-center h-[148px] max-w-[250px]">
+            <span class="text-white text-sm uppercase">COMPANY</span>
+            <a href="/">
+              <img src="images/logo-white.svg" class="h-[23px]" alt="">
+            </a>
+            <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+              diam nonummy
+              nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat.</p>
+          </div>
+
+          <div class="links flex flex-col justify-between items-start gap-y-4 h-[150px] max-w-[262px]">
+            <span class="text-white text-sm uppercase">LINKS</span>
+            <div class="flex w-full justify-between gap-7">
+              <div class="flex flex-col gap-y-3 text-sm">
+                <a href="#home" class="uppercase font-semibold text-white">HOME</a>
+                <a href="#about" class="uppercase font-semibold text-white">ABOUT</a>
+                <a href="#services" class="uppercase font-semibold text-white">SERVICES</a>
+                <a href="#" class="uppercase font-semibold text-white">PROJECTS</a>
+                <a href="#" class="uppercase font-semibold text-white">CONTACT US</a>
+              </div>
+              <div class="flex flex-col gap-y-3 text-sm">
+                <a href="#" class="uppercase font-semibold text-white">FAQ</a>
+                <a href="#" class="uppercase font-semibold text-white">TERMS</a>
+                <a href="#" class="uppercase font-semibold text-white">CAREERS</a>
+              </div>
+              <div class="flex flex-col gap-y-3 text-sm">
+                <a href="#" class="uppercase font-semibold text-white">FAQ</a>
+                <a href="#" class="uppercase font-semibold text-white">TERMS</a>
+                <a href="#" class="uppercase font-semibold text-white">CAREERS</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="socials flex gap-5 md:mt-0 mt-10">
+            <a href="#" class="text-white text-lg">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" class="text-white text-lg">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" class="text-white text-lg">
+              <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="w-full bg-darker text-white text-sm text-center py-4">© 2017 Konstruct Inc. Designed by Jane Kathryn
+          Teo
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu'),
+      mobileMenuItems = document.querySelectorAll('#mobile-menu ul li a'),
+      toggleBtn = document.querySelector('.toggleBtn');
+    let b = toggleBtn.innerHTML;
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (!mobileMenu.classList.contains('hidden')) {
+        toggleBtn.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>`;
+      } else {
+        toggleBtn.innerHTML = b;
+      }
+    });
+
+    mobileMenuItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        toggleBtn.innerHTML = b;
+      })
+    });
+  </script>
+</body>
+
+</html>

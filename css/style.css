@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+nav ul li a.active {
+  color: #00A4E5;
+}
+
+#about {
+  grid-template-areas:
+    'title title'
+    'p1 drafts'
+    'p2 drafts'
+  ;
+}
+
+.title {
+  grid-area: title;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.drafts {
+  grid-area: drafts;
+}
+
+#contact {
+  background: url(../images/contact_bg.png);
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    letter-spacing: 2.7px;
+  }
+
+  header p {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  #about {
+    grid-template-rows: 1fr;
+    grid-template-areas: 'title' 'p1' 'p2' 'drafts';
+    place-items: center;
+    gap: 20px 0;
+  }
+}
